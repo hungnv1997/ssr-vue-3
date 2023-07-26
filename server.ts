@@ -48,7 +48,7 @@ async function createServer(
   app.use(cacheMiddleware)
   app.use('/robots.txt', function (req, res, next) {
     res.type('text/plain')
-    res.send('User-agent: *\nDisallow: /')
+    res.send('User-agent: *\nAllow: /$\nAllow: /pages/\nDisallow: /')
   })
   /**
    * @type {import('vite').ViteDevServer}

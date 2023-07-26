@@ -7,26 +7,26 @@ import {
 import About from './pages/About.vue'
 
 const routes: RouteRecordRaw[] = [
-  // {
-  //   path: '/',
-  //   component: Resources,
-  //   children: [
-  //     {
-  //       path: 'resource/:id',
-  //       component: Resource,
-  //       children: [
-  //         {
-  //           path: 'transactions',
-  //           component: () => import('./pages/Resources/Transactions.vue'),
-  //         },
-  //         {
-  //           path: 'requisites',
-  //           component: () => import('./pages/Resources/Requisites.vue'),
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    path: '/',
+    component: () => import('./pages/Home.vue'),
+    //   children: [
+    //     {
+    //       path: 'resource/:id',
+    //       component: Resource,
+    //       children: [
+    //         {
+    //           path: 'transactions',
+    //           component: () => import('./pages/Resources/Transactions.vue'),
+    //         },
+    //         {
+    //           path: 'requisites',
+    //           component: () => import('./pages/Resources/Requisites.vue'),
+    //         },
+    //       ],
+    //     },
+    //   ],
+  },
   {
     path: '/home',
     component: () => import('./pages/Home.vue'),
