@@ -1,4 +1,7 @@
-require('./src/server/polyfills')
+// require('./src/server/polyfills')
+if (!globalThis.fetch) {
+  globalThis.fetch = require('isomorphic-fetch')
+}
 const redisClient = require('./redis.js')
 const fs = require('fs')
 const path = require('path')
